@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select DisPlay</title>
+    <link rel="stylesheet" href="globalStyle.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>DisPlay Magic</h1>
+    <br/>
+    <br/>
+    <br/>
+    <form>
+      <label for="framework">Select an option: </label>
+      <select class="options" onchange="showOpt()">
+        <option value="">-- Display None --</option>
+        <option value=""> Display Groot </option>
+      </select>
+    </form>
+    <div id="DIV"><p>I Am Groot</p>
+      <img src="https://pngimg.com/uploads/groot/groot_PNG36.png" class="groot"></div>
+    <script>
+      const x = document.querySelector(".options");
+      function showOpt() {
+        let a = x.selectedIndex;
+        document.getElementById("DIV").style.display = "none";
+        if (a == 1) {
+          document.getElementById("DIV").style.display = "inline-block";
+        }
+      }
+    </script>
+  </body>
+</html>

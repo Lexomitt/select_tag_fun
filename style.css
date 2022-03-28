@@ -1,0 +1,28 @@
+.options {
+  width: 30vh;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #f1bcbc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.groot {
+	height: 100%;
+	width: auto;
+	float: right;
+	margin-top:20px;
+	z-index: 9999;
+}
+
+#DIV {
+	  width: 70vh;
+	  height: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: none;
+  border: 1px solid #f1bcbc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
